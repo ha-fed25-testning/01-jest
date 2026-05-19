@@ -1,0 +1,24 @@
+{
+  "name": "01-jest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test-manual": "node tests/example.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ha-fed25-testning/01-jest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/ha-fed25-testning/01-jest/issues"
+  },
+  "homepage": "https://github.com/ha-fed25-testning/01-jest#readme"
+}
