@@ -1,6 +1,7 @@
 
 function isItWorthSeeing(funniness, excitement, mindExpanding) {
-	if( funniness + excitement + mindExpanding >= 12 ) {
+	const baseScore = 12
+	if( funniness + excitement + mindExpanding >= baseScore ) {
 		return true
 	} else {
 		return false

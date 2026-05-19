@@ -9,21 +9,24 @@
 
 import { isItWorthSeeing } from "../src/example.js";
 
+const PASS = '\x1b[32mPASS\x1b[0m'
+const FAIL = '\x1b[31mFAIL\x1b[0m'
+
 function test_highScore() {
 	let result = isItWorthSeeing(3, 5, 4)
 	if( result === true ) {
-		console.log('High score: \x1b[32mPASS\x1b[0m')  //  green test case
+		console.log('High score: ' + PASS)  //  green test case
 	} else {
-		console.log('High score: \x1b[31mFAIL\x1b[0m')  // red test case
+		console.log('High score: ' + FAIL)  // red test case
 	}
 }
 
 function test_lowScore_returnsFalse() {
 	let result = isItWorthSeeing(2, 1, 3)
 	if( result === false ) {
-		console.log('Low score: \x1b[32mPASS\x1b[0m')
+		console.log('Low score: ' + PASS)
 	} else {
-		console.log('Low score: \x1b[31mFAIL\x1b[0m. (should return false)')
+		console.log('Low score: ' + FAIL + '. (should return false)')
 	}
 }
 
