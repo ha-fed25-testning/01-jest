@@ -7,7 +7,8 @@
     "test": "tests"
   },
   "scripts": {
-    "test-manual": "node tests/example.test.js"
+    "test-manual": "node tests/example.manual.js",
+    "test": "node --no-warnings=ExperimentalWarning --experimental-vm-modules node_modules/jest/bin/jest"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/ha-fed25-testning/01-jest/issues"
   },
-  "homepage": "https://github.com/ha-fed25-testning/01-jest#readme"
+  "homepage": "https://github.com/ha-fed25-testning/01-jest#readme",
+  "devDependencies": {
+    "jest": "^30.4.2"
+  }
 }
