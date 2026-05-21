@@ -27,4 +27,16 @@ describe('subtract', () => {
 		expect( actual ).toBe( expected )
 	})
 
+	it('should throw an Error when x is not a number', () => {
+		// Arrange - inget värde, inget att förbereda
+
+		// Act + assert
+		expect( () => subtract('anka', 10) ).toThrow()
+	})
+
+	it('should throw an Error when y is not a number', () => {
+		expect( () => subtract(500, false) ).toThrow()
+	})
+
+
 })
