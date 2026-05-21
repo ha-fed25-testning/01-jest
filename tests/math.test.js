@@ -1,5 +1,5 @@
 /*
-Krav:
+Krav:  (subtract)
 - Det ska finnas en funktion som räknar ut skillnaden mellan två tal
 - x, y ska vara numbers
 - funktionen ska returnera x-y
@@ -11,8 +11,21 @@ Testfall:
 - it should throw an Error when x is not a number
 - it should throw an Error when y is not a number
 - it should return the difference
+
+
+Krav:  (triple)
+- Det ska finnas en funktion som returnerar tre gånger input
+- x ska vara ett number
+- funktionen ska returnera 3*x
+- om x inte är ett tal ska funktionen returnera ett felmeddelande, som en sträng
+
+function triple(x) {}
+
+Testfall:
+- it should return triple the input number
+- it should return "Invalid input" when x is not a number
 */
-import { subtract } from "../src/math.js"
+import { subtract, triple } from "../src/math.js"
 
 describe('subtract', () => {
 	it('should return the difference', () => {
@@ -39,4 +52,18 @@ describe('subtract', () => {
 	})
 
 
+})
+
+describe('triple', () => {
+	test.each([
+		[11, 33], [4, 12], [0, 0]
+	])('should return triple %i ', (input, expected) => {
+		// Arrange
+
+		// Act
+		const actual = triple(input)
+
+		// Assert
+		expect(actual).toBe(expected)
+	})
 })

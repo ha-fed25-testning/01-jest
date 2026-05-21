@@ -12,4 +12,11 @@ function mustBeNumber(value, message) {
 	}
 }
 
-export { subtract }
+// En funktion som returnerar tre gånger input.
+function triple(x) {
+	return x * 3
+}
+
+
+
+export { subtract, triple }
