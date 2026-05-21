@@ -14,6 +14,9 @@ function mustBeNumber(value, message) {
 
 // En funktion som returnerar tre gånger input.
 function triple(x) {
+	if( typeof x !== 'number' ) {
+		return 'Invalid input'
+	}
 	return x * 3
 }
 

@@ -55,6 +55,7 @@ describe('subtract', () => {
 })
 
 describe('triple', () => {
+	// Parametriserat test
 	test.each([
 		[11, 33], [4, 12], [0, 0]
 	])('should return triple %i ', (input, expected) => {
@@ -65,5 +66,11 @@ describe('triple', () => {
 
 		// Assert
 		expect(actual).toBe(expected)
+	})
+
+	it('should return "Invalid input" when x is not a number', () => {
+		const expected = 'Invalid input'
+		const actual = triple('123')
+		expect( actual ).toBe( expected )
 	})
 })
